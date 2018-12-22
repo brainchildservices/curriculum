@@ -2,7 +2,7 @@
 
 ## Setup
 
-***1***. Clone the (garageScript/curriculum) repository locally
+***1***. Clone the (brainchildservices/curriculum) repository locally
 
 ***2***. To install all of the dependencies, run `yarn` in the root curriculum directory
 
