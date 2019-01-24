@@ -3,7 +3,7 @@
   "description": "algorithm practice",
   "version": "0.0.0",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -w",
+    "test": "mocha -w",
     "twin": "node ./node_modules/mocha/bin/mocha -w"
   },
   "dependencies": {
@@ -12,7 +12,7 @@
     "ejs": "~2.5.5",
     "eslint-plugin-react": "^7.0.1",
     "express": "~4.14.1",
-    "mocha": "^3.2.0",
+    "mocha": "^5.2.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.2",
     "stylus": "0.54.5",
