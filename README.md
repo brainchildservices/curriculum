@@ -13,6 +13,7 @@
 - C#
 - Redux
 - SQL
+- Azure Cloud
  
  we follow sprints 
  
