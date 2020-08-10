@@ -42,7 +42,7 @@ Sprints
 - 33-40
   continuing Education and Job Search
 
-## Setup
+## Setup this project locally
 
 ***1***. Clone the (brainchildservices/curriculum) repository locally
 
