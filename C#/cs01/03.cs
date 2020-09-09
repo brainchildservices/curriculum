@@ -1,11 +1,11 @@
 using System;
 namespace Brainchild.Curriculum.Solutions
 {
-    public class Solution03
+    //implement bubblesort in C# and also create the necessary tests
+    public class BubbleSort
     {
-        public bool ToDo(int a, float b,string c)
-        {
-            throw new NotImplementedException("Please write your solution here");
+        public int[] Sort(int[] arr){
+            throw new NotImplementedException();
         }
     }
 }
