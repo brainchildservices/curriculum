@@ -9,7 +9,7 @@ namespace Brainchild.Curriculum
         {
         }
         [Test]
-        public void Test01()
+        public void Test()
         {
             Assert.Fail();
         }
