@@ -1,11 +1,6 @@
 using System;
 namespace Brainchild.Curriculum.Solutions
 {
-<<<<<<< HEAD
-    public class FizzBuzz
-    {
-        public string PrintIndividual(int a)
-=======
     /*
     Write a program that prints the numbers from 1 to 100 and for multiples of '3' print "Fizz" instead of the number 
     and for the multiples of '5' print "Buzz".
@@ -17,7 +12,6 @@ namespace Brainchild.Curriculum.Solutions
     {
         ///Accept one number and return a string(Fizz or Buzz or the number ) based on the aforementioned logic 
         public string Print(int a)
->>>>>>> aneeshSub
         {
             if(a%3==0 && a%5==0){
                 return "Fizz Buzz";
@@ -32,14 +26,9 @@ namespace Brainchild.Curriculum.Solutions
                 return a.ToString();
             }
         }
-<<<<<<< HEAD
-        public string[] PrintNumbers(int length)
-        {
-=======
 
         ///Accept one number and return an array of strings(Fizz or Buzz or the number ) for each value 0 to num passed to the below function
         public string[] PrintNumbers(int length){
->>>>>>> aneeshSub
             string[] result=new string[length];
             for (int i = 1; i <=length; i++)
             {
