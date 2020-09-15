@@ -11,11 +11,28 @@ ReverseCase("MANY THANKS") ➞ "many thanks"
 
 ReverseCase("sPoNtAnEoUs") ➞ "SpOnTaNeOuS"
 */
-    public class Solution05
+    public class StringReversal
     {
-        public bool ToDo(int a, float b,string c)
+        public string stringReverse(string input)
         {
-            throw new NotImplementedException("Please write your solution here");
+            char[] result=new char[input.Length];
+            for (int i = 0; i < input.Length; i++)
+            {
+                if(Char.IsUpper(input[i]))
+                {
+                    result[i]=Char.ToLower(input[i]);
+                }
+                else if(Char.IsLower(input[i]))
+                {
+                    result[i]=Char.ToUpper(input[i]);
+                }
+                else
+                {
+                    result[i]=input[i];
+                }
+            }
+            string myresult=new string(result);
+            return myresult;
         }
     }
 }
