@@ -29,15 +29,16 @@ namespace Brainchild.Curriculum.Solutions
             string[] result = new string[length];
             for (int i = 1; i <=length; i++)
             {
-                if(i%3 == 0){
-                    result[i-1] = "Fizz";
-                }
-                else if(i%5 == 0){
-                    result[i-1] = "Buzz";
-                }
-                else{
-                    result[i-1] = i.ToString();
-                }
+                result[i-1]=Print(i);
+                // if(i%3 == 0){
+                //     result[i-1] = "Fizz";
+                // }
+                // else if(i%5 == 0){
+                //     result[i-1] = "Buzz";
+                // }
+                // else{
+                //     result[i-1] = i.ToString();
+                // }
             }
             Console.WriteLine(result);
             return result;
