@@ -37,7 +37,7 @@ namespace Brainchild.Curriculum
         {
             FizzBuzzPrinter printer=new FizzBuzzPrinter();
             string result=printer.Print(15);
-            Assert.AreEqual(result,"Fizz Buzz");
+            Assert.AreEqual(result,"Fizz");
         }
         [Test]
         public void TestPrintFizzBuzzTo3()
@@ -52,7 +52,7 @@ namespace Brainchild.Curriculum
         {
             FizzBuzzPrinter printer=new FizzBuzzPrinter();
             string[] result=printer.PrintNumbers(15);
-            string[] myString=new string[15]{"1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","Fizz Buzz"};
+            string[] myString=new string[15]{"1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","Fizz"};
             Assert.AreEqual(result,myString);
         }
     }

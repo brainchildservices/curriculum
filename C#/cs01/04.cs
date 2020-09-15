@@ -13,9 +13,16 @@ namespace Brainchild.Curriculum.Solutions
     {
        //this class should reuse existing FizzBuzzPrinter from C#\cs01\01.cs
        //HINT:YOu have to use inheritance https://www.w3schools.com/cs/cs_inheritance.asp
-       public int lengthUpto100(){
-           return 100;
+       public string[] printNumbersV2(){
+           string[] result=PrintNumbers(100);
+           for (int i = 0; i < 100; i++)
+           {
+               int j=i+1;
+               if(j%3==0 && j%5==0){
+                    result[i]="FizzBuzz";
+               }
+           }
+            return result;
        }
-
     }
 }

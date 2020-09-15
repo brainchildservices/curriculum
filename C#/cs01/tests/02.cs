@@ -139,15 +139,15 @@ namespace Brainchild.Curriculum
         public void MultiplyLongDifferentNumbers()
         {
             Calculator calc=new Calculator();
-            long result=calc.Multiply(4223372036854,3223372036854);
-            Assert.AreEqual(result,5112613466446677092);
+            long result=calc.Multiply(3147483647,1147483641);
+            Assert.AreEqual(result,3611685995247518727);
         }
         [Test]
         public void MultiplyLongSameNumbers()
         {
             Calculator calc=new Calculator();
-            long result=calc.Multiply(4223372036854775807,4223372036854775807);
-            Assert.AreEqual(result,948477850995392513);
+            long result=calc.Multiply(3007483641,3007483641);
+            Assert.AreEqual(result,9044957850882616881);
         }
       }
 }
