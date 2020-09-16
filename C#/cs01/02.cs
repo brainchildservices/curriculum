@@ -28,7 +28,7 @@ namespace Brainchild.Curriculum.Solutions
             public float Subtract(float a, float b){
                return a-b;
            }
-            public long Sutract(long a, long b){
+            public long Subtract(long a, long b){
                return a-b;
            }
             public int Multiply(int a, int b){

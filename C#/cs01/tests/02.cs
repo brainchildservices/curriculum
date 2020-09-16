@@ -97,14 +97,14 @@ namespace Brainchild.Curriculum
         public void SubtractLongDifferentNumbers()
         {
             Calculator calc=new Calculator();
-            long result=calc.Subtract(99999999,454545);
-            Assert.AreEqual(result,99545454);
+            long result=calc.Subtract(4223372036854775807,3223372036854775807);
+            Assert.AreEqual(result,1000000000000000000);
         }
         [Test]
         public void SubtractLongSameNumbers()
         {
             Calculator calc=new Calculator();
-            long result=calc.Subtract(99999999,99999999);
+            long result=calc.Subtract(4223372036854775807,4223372036854775807);
             Assert.AreEqual(result,0);
         }
         [Test]
