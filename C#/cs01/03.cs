@@ -4,17 +4,17 @@ namespace Brainchild.Curriculum.Solutions
     //implement bubblesort in C# and also create the necessary tests
     public class BubbleSort
     {
-        public int[] Sort(int[] arr){
-            int length=arr.Length;
+        public int[] Sort(int[] array){
+            int length=array.Length;
             for (int i = 0; i < length; i++)
             {
                 bool swap=false;
                 for (int j = 0; j < length-1; j++)
                 {
-                    if(arr[j]>arr[j+1]){
-                        int temp=arr[j];
-                        arr[j]=arr[j+1];
-                        arr[j+1]=temp;
+                    if(array[j]>array[j+1]){
+                        int temp=array[j];
+                        array[j]=array[j+1];
+                        array[j+1]=temp;
                         swap=true;
                     }
                 }
@@ -22,7 +22,7 @@ namespace Brainchild.Curriculum.Solutions
                     break;
                 }
             }
-            return arr;
+            return array;
         }
     }
 }

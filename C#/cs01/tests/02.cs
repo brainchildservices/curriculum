@@ -13,29 +13,29 @@ namespace Brainchild.Curriculum
         public void AddIntSameNumbers()
         {
             Calculator calc=new Calculator();
-            int result=calc.Add(1,1);
-            Assert.AreEqual(result,2);
+            int result=calc.Add(2,2);
+            Assert.AreEqual(result,4);
         }
         [Test]
         public void AddIntDifferentNumbers()
         {
             Calculator calc=new Calculator();
-            int result=calc.Add(1,2);
-            Assert.AreEqual(result,3);
+            int result=calc.Add(6,2);
+            Assert.AreEqual(result,8);
         }
         [Test]
         public void AddFloatSameNumbers()
         {
             Calculator calc=new Calculator();
-            float result=calc.Add(1.22f,1.22f);
-            Assert.AreEqual(result,2.44f);
+            float result=calc.Add(1.8f,1.8f);
+            Assert.AreEqual(result,3.6f);
         }
         [Test]
         public void AddFloatDifferentNumbers()
         {
             Calculator calc=new Calculator();
-            float result=calc.Add(1.05f,1.05f);
-            Assert.AreEqual(result,2.10f);
+            float result=calc.Add(1.05f,1.02f);
+            Assert.AreEqual(result,2.07f);
         }
         [Test]
         public void AddLongDifferentNumbers()
@@ -55,15 +55,15 @@ namespace Brainchild.Curriculum
         public void AddStringSameWords()
         {
             Calculator calc=new Calculator();
-            string result=calc.Add("Hello ","Hello!");
-            Assert.AreEqual(result,"Hello Hello!");
+            string result=calc.Add("Hello ","Hello");
+            Assert.AreEqual(result,"Hello Hello");
         }
         [Test]
         public void AddStringDifferentWords()
         {
             Calculator calc=new Calculator();
-            string result=calc.Add("Can we ","do it?");
-            Assert.AreEqual(result,"Can we do it?");
+            string result=calc.Add("Hello ","World");
+            Assert.AreEqual(result,"Hello World");
         }
         [Test]
         public void SubtractIntSameNumbers()
@@ -83,15 +83,15 @@ namespace Brainchild.Curriculum
         public void SubtractFloatSameNumbers()
         {
             Calculator calc=new Calculator();
-            float result=calc.Subtract(1.22f,1.22f);
+            float result=calc.Subtract(3.52f,3.52f);
             Assert.AreEqual(result,0);
         }
         [Test]
         public void SubtractFloatDifferentNumbers()
         {
             Calculator calc=new Calculator();
-            float result=calc.Subtract(2.05f,1.05f);
-            Assert.AreEqual(result,1);
+            float result=calc.Subtract(8.67f,7.05f);
+            Assert.AreEqual(result,1.61999989f);
         }
         [Test]
         public void SubtractLongDifferentNumbers()
@@ -111,15 +111,15 @@ namespace Brainchild.Curriculum
         public void MultiplyIntSameNumbers()
         {
             Calculator calc=new Calculator();
-            int result=calc.Multiply(2,2);
-            Assert.AreEqual(result,4);
+            int result=calc.Multiply(3,3);
+            Assert.AreEqual(result,9);
         }
         [Test]
         public void MultiplyIntDifferentNumbers()
         {
             Calculator calc=new Calculator();
-            int result=calc.Multiply(1,2);
-            Assert.AreEqual(result,2);
+            int result=calc.Multiply(6,2);
+            Assert.AreEqual(result,12);
         }
         [Test]
         public void MultiplyFloatSameNumbers()
