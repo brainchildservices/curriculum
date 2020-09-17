@@ -15,16 +15,11 @@ Consider that 0! = 1.
 You should return a long data type number.
 use recursion
 */
-    public class Factorial
+    public class Solution07
     {
-        public long Fact(long num)
+        public bool ToDo(int a, float b,string c)
         {
-            if(num==0)
-            {
-                return 1;
-            }
-            else
-            return num*Fact(num-1);
+            throw new NotImplementedException("Please write your solution here");
         }
     }
 }

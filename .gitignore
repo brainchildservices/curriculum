@@ -360,11 +360,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-<<<<<<< HEAD
-=======
-
-# Local History for Visual Studio Code
-.history/
->>>>>>> aneesh
-.vscode/launch.json
-.vscode/tasks.json
