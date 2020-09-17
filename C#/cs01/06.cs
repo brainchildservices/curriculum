@@ -13,16 +13,11 @@ ArrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
 Notes
 Notice that num is also included in the returned array.
 */
-    public class ArrayOfMultiples
+    public class Solution06
     {
-        public int[] arrayMultiples(int num, int length)
+        public bool ToDo(int a, float b,string c)
         {
-            int[] result=new int[length];
-            for (int i = 1; i <= length; i++)
-            {
-                result[i-1]=num*i;
-            }
-            return result;
+            throw new NotImplementedException("Please write your solution here");
         }
     }
 }
