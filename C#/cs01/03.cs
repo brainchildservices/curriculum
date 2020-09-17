@@ -1,11 +1,28 @@
 using System;
 namespace Brainchild.Curriculum.Solutions
 {
-    public class Solution03
+    //implement bubblesort in C# and also create the necessary tests
+    public class BubbleSort
     {
-        public bool ToDo(int a, float b,string c)
-        {
-            throw new NotImplementedException("Please write your solution here");
+        public int[] Sort(int[] arr){
+            int length=arr.Length;
+            for (int i = 0; i < length; i++)
+            {
+                bool swap=false;
+                for (int j = 0; j < length-1; j++)
+                {
+                    if(arr[j]>arr[j+1]){
+                        int temp=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp;
+                        swap=true;
+                    }
+                }
+                if(swap==false){
+                    break;
+                }
+            }
+            return arr;
         }
     }
 }
