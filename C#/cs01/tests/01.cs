@@ -9,42 +9,36 @@ namespace Brainchild.Curriculum
         public void SetUp()
         {
         }
+       
         [Test]
-        public void TestNumberOtherThan3or5Divisible()
+        public void TestingIsFizzReplacingForMultiplesOf3()
         {
-            FizzBuzzPrinter printer=new FizzBuzzPrinter();
-            string result=printer.Print(4);
-            Assert.AreEqual(result,"4");
+            FizzBuzz fizzbuzz=new FizzBuzz();
+            string actual=fizzbuzz.Print(9);
+            Assert.AreEqual(actual,"Fizz");
         }
         [Test]
-        public void TestNumberDivisibleBy5()
+        public void TestingIsBuzzReplacingForMultiplesOf5()
         {
-            FizzBuzzPrinter printer=new FizzBuzzPrinter();
-            string result=printer.Print(25);
-            Assert.AreEqual(result,"Buzz");
+            FizzBuzz fizzbuzz=new FizzBuzz();
+            string actual=fizzbuzz.Print(10);
+            Assert.AreEqual(actual,"Buzz");
         }
-        [Test]
-        public void TestNumberDivisibleBy3()
+         [Test]
+        public void TestingOtherInteger()
         {
-            FizzBuzzPrinter printer=new FizzBuzzPrinter();
-            string result=printer.Print(6);
-            Assert.AreEqual(result,"Fizz");
+            FizzBuzz fizzbuzz=new FizzBuzz();
+            string actual=fizzbuzz.Print(4);
+            Assert.AreEqual(actual,"4");
         }
+       
         [Test]
-        public void TestPrintFizzBuzzTo3()
+        public void OutputCheckingUpto15()
         {
-            FizzBuzzPrinter printer=new FizzBuzzPrinter();
-            string[] result=printer.PrintNumbers(3);
-            string[] myString=new string[3]{"1","2","Fizz"};
-            Assert.AreEqual(result,myString);
-        }
-        [Test]
-        public void TestPrintFizzBuzzTo15()
-        {
-            FizzBuzzPrinter printer=new FizzBuzzPrinter();
-            string[] result=printer.PrintNumbers(15);
-            string[] myString=new string[15]{"1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","Fizz"};
-            Assert.AreEqual(result,myString);
+            FizzBuzz fizzbuzz=new FizzBuzz();
+            string[] actual=fizzbuzz.Print2(15);
+            string[] expected=new string[15]{"1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","Fizz"};
+            Assert.AreEqual(actual,expected);
         }
       }
 }
