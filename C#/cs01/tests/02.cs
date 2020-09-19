@@ -9,104 +9,64 @@ namespace Brainchild.Curriculum
         public void SetUp()
         {
         }
+       
         [Test]
-        public void AddIntSameNumbers()
+        public void TestingAdditionOfIntType()
         {
-            Calculator calc=new Calculator();
-            int result=calc.Add(2,2);
-            Assert.AreEqual(result,4);
+            Calculator calculator=new Calculator();
+            int output=calculator.Add(8,7);
+            Assert.AreEqual(output,15);
+        }
+         [Test]
+        public void TestingAdditionOfFloatType()
+        {
+            Calculator calculator=new Calculator();
+            float output= calculator.Add(6.11f,8.23f);
+            Assert.AreEqual(output,14.34f);
         }
         [Test]
-        public void AddIntDifferentNumbers()
+        public void TestingAdditionOfLongType()
         {
-            Calculator calc=new Calculator();
-            int result=calc.Add(6,2);
-            Assert.AreEqual(result,8);
+            Calculator calculator=new Calculator();
+            long output=calculator.Add(885445345459999999,666666666666555555);
+            Assert.AreEqual(output,1552112012126555554);
+        }
+       [Test]
+        public void TestingAdditionOfStringType()
+        {
+            Calculator calculator=new Calculator();
+            string output= calculator.Add("Goo","gle");
+            Assert.AreEqual(output,"Google");
         }
         [Test]
-        public void AddFloatSameNumbers()
+        public void TestingSubtractionOfIntType()
         {
-            Calculator calc=new Calculator();
-            float result=calc.Add(1.8f,1.8f);
-            Assert.AreEqual(result,3.6f);
+            Calculator calculator=new Calculator();
+            int output= calculator.Subtract(77,48);
+            Assert.AreEqual(output,29);
         }
-        [Test]
-        public void AddFloatDifferentNumbers()
+       [Test]
+        public void TestingSubtractionOfFloatType()
         {
-            Calculator calc=new Calculator();
-            float result=calc.Add(1.05f,1.02f);
-            Assert.AreEqual(result,2.07f);
+            Calculator calculator=new Calculator();
+            float output= calculator.Subtract(9.75f,1.22f);
+            Assert.AreEqual(output,8.52999973f);
         }
-        [Test]
-        public void AddLongDifferentNumbers()
+       [Test]
+        public void TestingSubtractionOfLongType()
         {
-            Calculator calc=new Calculator();
-            long result=calc.Add(4223372036854775807,3223372036854775807);
-            Assert.AreEqual(result,7446744073709551614);
+            Calculator calculator=new Calculator();
+            float output= calculator.Subtract(867868568434532441,635635236667777);
+            Assert.AreEqual(output,867232933197864664);
         }
-        [Test]
-        public void AddLongSameNumbers()
+          [Test]
+        public void TestingMultiplicationOfIntType()
         {
-            Calculator calc=new Calculator();
-            long result=calc.Add(4223372036854775807,4223372036854775807);
-            Assert.AreEqual(result,8446744073709551614);
+            Calculator calculator=new Calculator();
+            float output= calculator.Multiply(9.75f,1.22f);
+            Assert.AreEqual(output,8.52999973f);
         }
-        [Test]
-        public void AddStringSameWords()
-        {
-            Calculator calc=new Calculator();
-            string result=calc.Add("Hello ","Hello");
-            Assert.AreEqual(result,"Hello Hello");
-        }
-        [Test]
-        public void AddStringDifferentWords()
-        {
-            Calculator calc=new Calculator();
-            string result=calc.Add("Hello ","World");
-            Assert.AreEqual(result,"Hello World");
-        }
-        [Test]
-        public void SubtractIntSameNumbers()
-        {
-            Calculator calc=new Calculator();
-            int result=calc.Subtract(1,1);
-            Assert.AreEqual(result,0);
-        }
-        [Test]
-        public void SubtractIntDifferentNumbers()
-        {
-            Calculator calc=new Calculator();
-            int result=calc.Subtract(1,2);
-            Assert.AreEqual(result,-1);
-        }
-        [Test]
-        public void SubtractFloatSameNumbers()
-        {
-            Calculator calc=new Calculator();
-            float result=calc.Subtract(3.52f,3.52f);
-            Assert.AreEqual(result,0);
-        }
-        [Test]
-        public void SubtractFloatDifferentNumbers()
-        {
-            Calculator calc=new Calculator();
-            float result=calc.Subtract(8.67f,7.05f);
-            Assert.AreEqual(result,1.61999989f);
-        }
-        [Test]
-        public void SubtractLongDifferentNumbers()
-        {
-            Calculator calc=new Calculator();
-            long result=calc.Subtract(99999999,454545);
-            Assert.AreEqual(result,99545454);
-        }
-        [Test]
-        public void SubtractLongSameNumbers()
-        {
-            Calculator calc=new Calculator();
-            long result=calc.Subtract(99999999,99999999);
-            Assert.AreEqual(result,0);
-        }
+       
         [Test]
         public void MultiplyIntSameNumbers()
         {

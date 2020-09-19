@@ -5,7 +5,9 @@ namespace Brainchild.Curriculum.Solutions
    
     public class FizzBuzzPrinter1:ChangeColor
     {
+       
        public void Main(){
+           Console.WriteLine("hellllooo");
              FizzBuzzPrinter2 a=new FizzBuzzPrinter2();
             string[] s=a.PrintNumbers2(15);
             for (int j = 0; j < 15; j++)
