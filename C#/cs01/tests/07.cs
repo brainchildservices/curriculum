@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Brainchild.Curriculum.Solutions;
 namespace Brainchild.Curriculum
 {
     [TestFixture]
@@ -9,9 +10,18 @@ namespace Brainchild.Curriculum
         {
         }
         [Test]
-        public void Test01()
+         public void factorialcheckingone()
         {
-            Assert.Fail();
+            FactorialOfaPositiveNumber factorialofanumber=new FactorialOfaPositiveNumber();
+            double output=factorialofanumber.Fact(1);
+            Assert.AreEqual(output,1);
+        }
+         [Test]
+         public void factorialcheckingothernumbers()
+        {
+            FactorialOfaPositiveNumber factorialofanumber=new FactorialOfaPositiveNumber();
+            double output=factorialofanumber.Fact(5);
+            Assert.AreEqual(output,120);
         }
       }
 }
