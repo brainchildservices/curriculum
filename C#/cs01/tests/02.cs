@@ -56,58 +56,32 @@ namespace Brainchild.Curriculum
         public void TestingSubtractionOfLongType()
         {
             Calculator calculator=new Calculator();
-            float output= calculator.Subtract(867868568434532441,635635236667777);
+            long output= calculator.Subtract(867868568434532441,635635236667777);
             Assert.AreEqual(output,867232933197864664);
         }
           [Test]
         public void TestingMultiplicationOfIntType()
         {
             Calculator calculator=new Calculator();
-            float output= calculator.Multiply(9.75f,1.22f);
-            Assert.AreEqual(output,8.52999973f);
+            int output= calculator.Multiply(12,5);
+            Assert.AreEqual(output,60);
         }
        
-        [Test]
-        public void MultiplyIntSameNumbers()
+         [Test]
+        public void TestingMultiplicationOfFloatType()
         {
-            Calculator calc=new Calculator();
-            int result=calc.Multiply(3,3);
-            Assert.AreEqual(result,9);
+            Calculator calculator=new Calculator();
+            float output= calculator.Multiply(82.78f,3.95f);
+            Assert.AreEqual(output,326.981f);
         }
         [Test]
-        public void MultiplyIntDifferentNumbers()
+        public void TestingMultiplicationOfLongType()
         {
-            Calculator calc=new Calculator();
-            int result=calc.Multiply(6,2);
-            Assert.AreEqual(result,12);
+            Calculator calculator=new Calculator();
+            long output= calculator.Multiply(65498498,8744449444);
+            Assert.AreEqual(output,572748304418935112);
+
         }
-        [Test]
-        public void MultiplyFloatSameNumbers()
-        {
-            Calculator calc=new Calculator();
-            float result=calc.Multiply(1.22f,1.22f);
-            Assert.AreEqual(result,1.4884001f);
-        }
-        [Test]
-        public void MultiplyFloatDifferentNumbers()
-        {
-            Calculator calc=new Calculator();
-            float result=calc.Multiply(1.05f,2.05f);
-            Assert.AreEqual(result,2.1525f);
-        }
-        [Test]
-        public void MultiplyLongDifferentNumbers()
-        {
-            Calculator calc=new Calculator();
-            long result=calc.Multiply(4223372036854,3223372036854);
-            Assert.AreEqual(result,5112613466446677092);
-        }
-        [Test]
-        public void MultiplyLongSameNumbers()
-        {
-            Calculator calc=new Calculator();
-            long result=calc.Multiply(4223372036854775807,4223372036854775807);
-            Assert.AreEqual(result,948477850995392513);
-        }
+       
       }
 }
