@@ -1,4 +1,6 @@
 using NUnit.Framework;
+using Brainchild.Curriculum.Solutions;
+using System.Text;
 namespace Brainchild.Curriculum
 {
     [TestFixture]
@@ -9,9 +11,12 @@ namespace Brainchild.Curriculum
         {
         }
         [Test]
-        public void Test01()
+        public void testingcharactercasereversal()
         {
-            Assert.Fail();
+            StringCharacterCaseReversal stringcasereverse = new StringCharacterCaseReversal;
+             StringBuilder str = new StringBuilder("Ge");
+            stringcasereverse.convertToOppositeCase(str);
+            Assert.AreEqual(str,"gE");
         }
       }
 }
