@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Brainchild.Curriculum.Solutions;
 namespace Brainchild.Curriculum
 {
     [TestFixture]
@@ -9,9 +10,20 @@ namespace Brainchild.Curriculum
         {
         }
         [Test]
-        public void Test01()
+        public void CheckingArrayOfMultiples()
         {
-            Assert.Fail();
+            MultiplesOfNumber multiplesofanumber=new MultiplesOfNumber();
+            int[] array=  multiplesofanumber.makeMultiples(3,4);
+            int[] expected={3 , 6 , 9 , 12};
+            Assert.AreEqual(array,expected);
         }
-      }
+        [Test]
+        public void CheckingArrayOfMultiples2()
+        {
+            MultiplesOfNumber multiplesofanumber=new MultiplesOfNumber();
+            int[] array=  multiplesofanumber.makeMultiples(7,6);
+            int[] expected={7, 14 , 21 , 28 , 35 ,42};
+            Assert.AreEqual(array,expected);
+        }
+    }
 }
