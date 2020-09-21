@@ -19,9 +19,7 @@ ReverseCase("sPoNtAnEoUs") ➞ "SpOnTaNeOuS"
         {
             
             int ln = str.Length; 
-              
-         
-           for (int i=0; i<ln; i++) {
+            for (int i = 0 ; i < ln; i++) {
                 
                   if (str[i]>='a' && str[i]<='z') {
                               

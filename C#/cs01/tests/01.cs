@@ -36,7 +36,7 @@ namespace Brainchild.Curriculum
         public void OutputCheckingUpto15()
         {
             FizzBuzz fizzbuzz=new FizzBuzz();
-            string[] actual=fizzbuzz.Print2(15);
+            string[] actual=fizzbuzz.PrintFizzBuzz(15);
             string[] expected=new string[15]{"1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","Fizz"};
             Assert.AreEqual(actual,expected);
         }

@@ -16,7 +16,7 @@ namespace Brainchild.Curriculum.Solutions {
             
         }
         ///Accept one number and return an array of strings(Fizz or Buzz or the number ) for each value 0 to num passed to the below function
-        public string[] Print2(int num){
+        public string[] PrintFizzBuzz(int num){
 
                 string[] strings = new string[ num ];
                 int i = 0;
