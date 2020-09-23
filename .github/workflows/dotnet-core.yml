@@ -2,9 +2,13 @@ name: .NET Core
 
 on:
   push:
-    branches: [ master, aneesh, sreerag, syamil, rohith ]
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      # Push events on master branch
+      - .*
   pull_request:
-    branches: [ master, aneesh, sreerag, syamil, rohith ]
+    branches: 
+      - .*
 
 jobs:
   build:
