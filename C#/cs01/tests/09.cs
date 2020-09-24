@@ -12,8 +12,8 @@ namespace Brainchild.Curriculum
         [Test]
          public void CheckingSplitting()
         {
-            SplittingString splittingstring=new SplittingString();
-            string[] real=splittingstring.Splitter("He is a very very good boy, isn't he?");
+            StringSplitter splittingstring=new StringSplitter();
+            string[] real=splittingstring.Split("He is a very very good boy, isn't he?");
             string[] expecting=new string[]{ "He", "is", "a", "very", "very", "good", "boy","isn", "t", "he"};
             Assert.AreEqual(real,expecting);
         }

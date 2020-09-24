@@ -1,9 +1,9 @@
 using System; 
   
-class SplittingString { 
+class StringSplitter { 
   
       
-    public string[] Splitter(string str) 
+    public string[] Split(string str) 
     { 
   
        
