@@ -12,21 +12,21 @@ namespace Brainchild.Curriculum
         [Test]
         public void NameTestingNoMiddleName()
         {
-            Aneesh myName=new Aneesh();
-            myName.FirstName="Aneesh";
-            myName.LastName="S";
-            string actual="Aneesh S";
-            Assert.AreEqual(myName.FullName,actual);
+            Aneesh myName = new Aneesh();
+            myName.FirstName = "Aneesh";
+            myName.LastName = "S";
+            string actual = "Aneesh S";
+            Assert.AreEqual(myName.FullName, actual);
         }
         [Test]
         public void NameTestingWithMiddleName()
         {
-            Aneesh myName=new Aneesh();
-            myName.FirstName="Aneesh";
-            myName.MiddleName="Karthika";
-            myName.LastName="S";
-            string actual="Aneesh Karthika S";
-            Assert.AreEqual(myName.FullName,actual);
+            Aneesh myName = new Aneesh();
+            myName.FirstName = "Aneesh";
+            myName.MiddleName = "Karthika";
+            myName.LastName = "S";
+            string actual = "Aneesh Karthika S";
+            Assert.AreEqual(myName.FullName, actual);
         }
     }
 }
