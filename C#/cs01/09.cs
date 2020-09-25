@@ -1,11 +1,19 @@
-using System;
-namespace Brainchild.Curriculum.Solutions
-{
-    public class Solution09
-    {
-        public bool ToDo(int a, float b,string c)
-        {
-            throw new NotImplementedException("Please write your solution here");
-        }
-    }
-}
+using System; 
+  
+class StringSplitter { 
+  
+      
+    public string[] Split(string str) 
+    { 
+  
+       
+        //String str = "He is a very very good boy, isn't he?"; 
+  
+        String[] split = { " ", "'","?" ,","}; 
+        
+         
+        String[] stringlist = str.Split(split,StringSplitOptions.RemoveEmptyEntries); 
+        Console.WriteLine(stringlist.Length);
+       return stringlist;
+    } 
+} 

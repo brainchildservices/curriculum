@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Brainchild.Curriculum.Solutions;
 namespace Brainchild.Curriculum
 {
     [TestFixture]
@@ -9,9 +10,12 @@ namespace Brainchild.Curriculum
         {
         }
         [Test]
-        public void Test01()
+         public void CheckingSplitting()
         {
-            Assert.Fail();
+            StringSplitter splittingstring=new StringSplitter();
+            string[] real=splittingstring.Split("He is a very very good boy, isn't he?");
+            string[] expecting=new string[]{ "He", "is", "a", "very", "very", "good", "boy","isn", "t", "he"};
+            Assert.AreEqual(real,expecting);
         }
       }
 }
