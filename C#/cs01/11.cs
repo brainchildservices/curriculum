@@ -19,7 +19,7 @@ namespace Brainchild.Curriculum.Solutions
 
         }
 
-n        string firstname = "";
+        string firstname = "";
         string middlename = "";
         string lastname = "";
         private string fullname;
