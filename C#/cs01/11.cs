@@ -14,8 +14,9 @@ namespace Brainchild.Curriculum.Solutions
         {
 
             firstname = first;
-            middlename = second;
-            lastname = last;
+            if(second!=null){
+            middlename = " " + second;}
+            lastname = " " + last;
 
         }
 

@@ -20,16 +20,20 @@ namespace Brainchild.Curriculum
             sreerag.LastName = "S";
             string expecting = "Sreerag P S";
             Assert.AreEqual(sreerag.FullName, expecting);
+            Assert.AreEqual(sreerag2.FullName, expecting);
         }
         [Test]
         public void CheckingWithoutMiddleNaming()
         {
             Sreerag sreerag2 = new Sreerag("Sreerag", null, "Ps");
+
             Sreerag sreerag = new Sreerag();
             sreerag.FirstName = "Sreerag";
             sreerag.LastName = "Ps";
             string expecting = "Sreerag Ps";
+
             Assert.AreEqual(sreerag.FullName, expecting);
+            Assert.AreEqual(sreerag2.FullName, expecting);
         }
         [Test]
         public void CheckingWithoutMiddleNaming2()
@@ -40,6 +44,7 @@ namespace Brainchild.Curriculum
             sreerag.LastName = "Musk";
             string expecting = "Elon Musk";
             Assert.AreEqual(sreerag.FullName, expecting);
+            Assert.AreEqual(sreerag2.FullName, expecting);
         }
     }
 }
