@@ -10,6 +10,23 @@ namespace Brainchild.Curriculum.Solutions
         private string middleName = "";
         private string lastName = "";
         private string fullName;
+        public Aneesh()
+        {
+
+        }
+        public Aneesh(string fstName, string midName, string lstName)
+        {
+            this.firstName = fstName;
+            if (midName == null)
+            {
+                this.middleName = midName;
+            }
+            else
+            {
+                this.middleName = " " + midName;
+            }
+            this.lastName = " " + lstName;
+        }
         //Read-Only Property
         public string FullName
         {

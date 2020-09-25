@@ -28,5 +28,19 @@ namespace Brainchild.Curriculum
             string actual = "Aneesh Karthika S";
             Assert.AreEqual(myName.FullName, actual);
         }
+        [Test]
+        public void NameTestingUsingConstructor()
+        {
+            Aneesh myName = new Aneesh("Aneesh", "Karthika", "S");
+            string actual = "Aneesh Karthika S";
+            Assert.AreEqual(myName.FullName, actual);
+        }
+        [Test]
+        public void NameTestingUsingConstructor1()
+        {
+            Aneesh myName = new Aneesh("Aneesh", null, "S");
+            string actual = "Aneesh S";
+            Assert.AreEqual(myName.FullName, actual);
+        }
     }
 }
