@@ -6,6 +6,24 @@ namespace Brainchild.Curriculum.Solutions
 // A readonly property should be exposed as FullName  which should return your full name .
     public class Sreerag
     {
+        public Sreerag() {
+
+        }
+        public Sreerag(string enteredname) {
+           
+            String[] split = {" "}; 
+            String[] stringlist = enteredname.Split(split,StringSplitOptions.RemoveEmptyEntries); 
+            if(stringlist.Length==3) {
+                 FirstName =stringlist[0];
+                 MiddleName =stringlist[1];
+                 LastName = stringlist[2];
+            } else {
+                 FirstName =stringlist[0];
+                 LastName = stringlist[1];
+            }
+
+        }
+       
         string firstname="";
         string middlename="";
         string lastname="";

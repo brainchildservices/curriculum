@@ -13,30 +13,30 @@ namespace Brainchild.Curriculum
         [Test]
         public void CheckingFullNaming()
         {
-            Sreerag nameclass = new Sreerag();
-            nameclass.FirstName ="Sreerag";
-            nameclass.MiddleName = "P";
-            nameclass.LastName = "S";
+            Sreerag sreerag = new Sreerag("Sreerag P S");
+          /*  sreerag.FirstName ="Sreerag";
+            sreerag.MiddleName = "P";
+            sreerag.LastName = "S";*/
             string expecting = "Sreerag P S";
-            Assert.AreEqual(nameclass.FullName,expecting);
+            Assert.AreEqual(sreerag.FullName,expecting);
         }
         [Test]
         public void CheckingWithoutMiddleNaming()
         {
-            Sreerag nameclass = new Sreerag();
-            nameclass.FirstName = "Sreerag";
-            nameclass.LastName = "Ps";
+            Sreerag sreerag = new Sreerag("Sreerag Ps");
+           /* sreerag.FirstName = "Sreerag";
+            sreerag.LastName = "Ps";*/
             string expecting = "Sreerag Ps";
-            Assert.AreEqual(nameclass.FullName,expecting);
+            Assert.AreEqual(sreerag.FullName,expecting);
         }
         [Test]
         public void CheckingWithoutMiddleNaming2()
         {
-            Sreerag nameclass = new Sreerag();
-            nameclass.FirstName = "Elon";
-            nameclass.LastName = "Musk";
+            Sreerag sreerag = new Sreerag("Elon Musk");
+            /*sreerag.FirstName = "Elon";
+            sreerag.LastName = "Musk";*/
             string expecting = "Elon Musk";
-            Assert.AreEqual(nameclass.FullName,expecting);
+            Assert.AreEqual(sreerag.FullName,expecting);
         }
       }
 }
