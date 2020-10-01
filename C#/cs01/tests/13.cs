@@ -23,9 +23,6 @@ namespace Brainchild.Curriculum
             expected[0] = 5;
             expected[1] = 10;
             expected[2] = 15;
-            // expected[3]=15;
-            // expected[4]=0;
-            // expected[5]=0;
             int[] result = myStack.PrintStack();
             Assert.AreEqual(result, expected);
         }
@@ -62,10 +59,6 @@ namespace Brainchild.Curriculum
             float[] expected = new float[1000];
             expected[0] = 5.0f;
             expected[1] = 10.1f;
-            // expected[2]=15;
-            // expected[3]=15;
-            // expected[4]=0;
-            // expected[5]=0;
             float[] result = myStack.PrintStack();
             Assert.AreEqual(result, expected);
         }

@@ -17,11 +17,7 @@ namespace Brainchild.Curriculum.Solutions
         {
             T[] stackNew = new T[MAX];
             T value = stack[index];
-            for (int i = 0; i <= index - 1; i++)
-            {
-                stackNew[i] = stack[i];
-            }
-            stack = stackNew;
+            stack[index]=default(T); // Reset last element to default value of the data type
             index = index - 1;
             return value;
         }
