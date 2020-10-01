@@ -19,15 +19,15 @@ namespace Brainchild.Curriculum
             myStack.Push(20);
             int lastValue = myStack.Pop();
             Assert.AreEqual(lastValue, 20);
-            int[] expected=new int[1000];
-            expected[0]=5;
-            expected[1]=10;
-            expected[2]=15;
+            int[] expected = new int[1000];
+            expected[0] = 5;
+            expected[1] = 10;
+            expected[2] = 15;
             // expected[3]=15;
             // expected[4]=0;
             // expected[5]=0;
-            int[] result=myStack.PrintStack();
-            Assert.AreEqual(result,expected);
+            int[] result = myStack.PrintStack();
+            Assert.AreEqual(result, expected);
         }
         [Test]
         public void StringStack()
@@ -38,14 +38,14 @@ namespace Brainchild.Curriculum
             myStack.Push("Rohith");
             myStack.Push("Ardra");
             string lastValue = myStack.Pop();
-            lastValue=myStack.Pop();
+            lastValue = myStack.Pop();
             Assert.AreEqual(lastValue, "Rohith");
-            string[] expected=new string[1000];
-            expected[0]="Aneesh";
-            expected[1]="Sreerag";
+            string[] expected = new string[1000];
+            expected[0] = "Aneesh";
+            expected[1] = "Sreerag";
             // expected[2]="Rohith";
-            string[] result=myStack.PrintStack();
-            Assert.AreEqual(result,expected);
+            string[] result = myStack.PrintStack();
+            Assert.AreEqual(result, expected);
         }
         [Test]
         public void FloatStack()
@@ -59,15 +59,15 @@ namespace Brainchild.Curriculum
             lastValue = myStack.Pop();
             //lastValue = myStack.Pop();
             Assert.AreEqual(lastValue, 15.5f);
-            float[] expected=new float[1000];
-            expected[0]=5.0f;
-            expected[1]=10.1f;
+            float[] expected = new float[1000];
+            expected[0] = 5.0f;
+            expected[1] = 10.1f;
             // expected[2]=15;
             // expected[3]=15;
             // expected[4]=0;
             // expected[5]=0;
-            float[] result=myStack.PrintStack();
-            Assert.AreEqual(result,expected);
+            float[] result = myStack.PrintStack();
+            Assert.AreEqual(result, expected);
         }
     }
 }

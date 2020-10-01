@@ -6,7 +6,7 @@ namespace Brainchild.Curriculum.Solutions
     public class StackPushPop<T>
     {
         static int MAX = 1000;
-        static int index=-1;
+        static int index = -1;
         T[] stack = new T[MAX];
         public void Push(T data)
         {
@@ -15,14 +15,14 @@ namespace Brainchild.Curriculum.Solutions
         }
         public T Pop()
         {
-            T[] stackNew=new T[MAX];
+            T[] stackNew = new T[MAX];
             T value = stack[index];
-            for (int i = 0; i <= index-1; i++)
+            for (int i = 0; i <= index - 1; i++)
             {
-                stackNew[i]=stack[i];
+                stackNew[i] = stack[i];
             }
-            stack=stackNew;
-            index=index-1;
+            stack = stackNew;
+            index = index - 1;
             return value;
         }
         internal T[] PrintStack()
