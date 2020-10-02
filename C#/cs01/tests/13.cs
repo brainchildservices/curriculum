@@ -40,7 +40,6 @@ namespace Brainchild.Curriculum
             expecting[1] = 7;
             Assert.AreEqual(actual, expecting);
             Assert.AreEqual(popped, 88);
-
         }
         [Test]
         public void CheckingGenericClassDoubleStack()
@@ -57,7 +56,5 @@ namespace Brainchild.Curriculum
             Assert.AreEqual(actual, expecting);
             Assert.AreEqual(popped, 88.55);
         }
-
-
     }
 }
