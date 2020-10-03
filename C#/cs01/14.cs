@@ -9,34 +9,34 @@ namespace Brainchild.Curriculum.Solutions
     // Now Print() method can use this strategy class to do billing calculation
     // you can create a function or constructor with an argument as IStrategy , 
     // then pass the actual object derived from the interface when calling the constructor
-    public interface IStrategy
+    public interface IBillingStrategy
     {
         double Print(double price);
     }
-      public class NormalStrategy : IStrategy
+    public class NormalStrategy : IBillingStrategy
     {
         public double Print(double price)
         {
             return price;
         }
     }
-    public class HappyHourStrategy : IStrategy
+    public class HappyHourStrategy : IBillingStrategy
     {
         public double Print(double price)
         {
-            return price*.8;
+            return price * .8;
         }
     }
-      public class CustomerBill
+    public class CustomerBill
     {
-        public IStrategy Strategy { get; set; }
-        public CustomerBill(IStrategy strategy)
+        public IBillingStrategy Strategy { get; set; }
+        public CustomerBill(IBillingStrategy strategy)
         {
             this.Strategy = strategy;
         }
         public double Add(double maxprice, int quantity)
         {
-            return this.Strategy.Print(maxprice*quantity);
+            return this.Strategy.Print(maxprice * quantity);
         }
     }
 
