@@ -17,14 +17,14 @@ namespace Brainchild.Curriculum.Solutions
     {
         public double Print(double price)
         {
-            return price;
+          return price;
         }
     }
     public class HappyHourStrategy : IBillingStrategy
     {
         public double Print(double price)
         {
-            return price * .8;
+          return price * .8;
         }
     }
     public class CustomerBill
@@ -32,12 +32,11 @@ namespace Brainchild.Curriculum.Solutions
         public IBillingStrategy Strategy { get; set; }
         public CustomerBill(IBillingStrategy strategy)
         {
-            this.Strategy = strategy;
+          this.Strategy = strategy;
         }
         public double Add(double maxprice, int quantity)
         {
-            return this.Strategy.Print(maxprice * quantity);
+          return this.Strategy.Print(maxprice * quantity);
         }
     }
-
 }
