@@ -39,7 +39,7 @@ namespace Brainchild.Curriculum
             HappyHourStrategy happStrat = new HappyHourStrategy();
             CustomerBill firstCust = new CustomerBill(happStrat);
             double result = firstCust.Amount(10.20, 20);
-            Assert.AreEqual(result, 163.20000000000002d);
+            Assert.AreEqual(result, 163.20);
         }
     }
 }

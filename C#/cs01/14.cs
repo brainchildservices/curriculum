@@ -40,7 +40,7 @@ namespace Brainchild.Curriculum.Solutions
     {
         public double FinalBill(double amount)
         {
-            return amount * 0.8;
+            return Math.Round(amount * 0.8,2);
         }
     }
 }
