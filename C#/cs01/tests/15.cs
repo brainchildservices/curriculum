@@ -14,7 +14,7 @@ namespace Brainchild.Curriculum
         {
             IntList list = new IntList();
             list.Add(100);
-            int[] real = list.integerArray;
+            int[] real = list.internalArr;
             int[] expected = { 100 };
             Assert.AreEqual(real, expected);
 
@@ -51,7 +51,7 @@ namespace Brainchild.Curriculum
             list.Add(88);
             Assert.AreEqual(list.Count, 6);
             Assert.AreEqual(list.Get(4), 10);
-            int[] real = list.integerArray;
+            int[] real = list.internalArr;
             int[] expected = { 1, 7, 170, 100, 10, 88 };
             Assert.AreEqual(real, expected);
         }
