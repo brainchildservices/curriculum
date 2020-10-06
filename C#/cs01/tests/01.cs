@@ -7,6 +7,7 @@ namespace Brainchild.Curriculum
         [SetUp]
         public void SetUp()
         {
+          
         }
         
         [Test]
