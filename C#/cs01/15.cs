@@ -9,6 +9,7 @@ namespace Brainchild.Curriculum.Solutions
     public class IntList
     {
         int count = -1;
+        int index=0;
         public int[] array = new int[1];
         public int Count
         {
@@ -19,7 +20,8 @@ namespace Brainchild.Curriculum.Solutions
         }
         public void Add(int num)
         {
-            int index = Get();
+            count = count + 1;
+            index=count;
             if (index == 0)
             {
                 array[0] = num;
@@ -36,10 +38,9 @@ namespace Brainchild.Curriculum.Solutions
                 array[index] = num;
             }
         }
-        public int Get()
+        public int Get(int index)
         {
-            count = count + 1;
-            return count;
+            return array[index];
         }
     }
 }

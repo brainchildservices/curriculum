@@ -38,6 +38,8 @@ namespace Brainchild.Curriculum
             int[] result=myList.array;
             int[] expected={12,24};
             Assert.AreEqual(result,expected);
+            int number=myList.Get(1);
+            Assert.AreEqual(number,24);
         }
         [Test]
         public void IntListInsert6Numbers()
@@ -54,6 +56,8 @@ namespace Brainchild.Curriculum
             int[] result=myList.array;
             int[] expected={12,24,36,48,60,72};
             Assert.AreEqual(result,expected);
+            int number=myList.Get(4);
+            Assert.AreEqual(number,60);
         }
     }
 }
