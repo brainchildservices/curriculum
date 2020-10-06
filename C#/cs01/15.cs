@@ -8,11 +8,11 @@ namespace Brainchild.Curriculum.Solutions
     // Count Property
     public class IntList
     {
-        public int[] integerArray = new int[1];
+        public int[] internalArr = new int[1];
         int i = -1;
         public int Get(int index)
         {
-            return integerArray[index];
+            return internalArr[index];
         }
         public int Count
         {
@@ -27,18 +27,18 @@ namespace Brainchild.Curriculum.Solutions
             int index = i;
             if (index == 0)
             {
-                integerArray[0] = num;
+                internalArr[0] = num;
             }
             else
             {
-                int[] localArray = new int[index];
-                localArray = integerArray;
-                integerArray = new int[index + 1];
-                for (int j = 0; j < localArray.Length; j++)
+                int[] localArr = new int[index];
+                localArr = internalArr;
+                internalArr = new int[index + 1];
+                for (int j = 0; j < localArr.Length; j++)
                 {
-                    integerArray[j] = localArray[j];
+                    internalArr[j] = localArr[j];
                 }
-                integerArray[index] = num;
+                internalArr[index] = num;
             }
         }
 
