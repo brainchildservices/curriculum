@@ -11,14 +11,34 @@ namespace Brainchild.Curriculum.Solutions
     public class FizzBuzzPrinter
     {
         ///Accept one number and return a string(Fizz or Buzz or the number ) based on the aforementioned logic 
-        public bool Print(int num)
+        public string Print(int num)
         {
-            throw new NotImplementedException("Please write your solution here");
+            if (num % 3 == 0)
+            {
+                return "Fizz";
+            }
+            else if (num % 5 == 0)
+            {
+                return "Buzz";
+            }
+            else
+            {
+                return num.ToString();
+            }
+
         }
 
         ///Accept one number and return an array of strings(Fizz or Buzz or the number ) for each value 0 to num passed to the below function
-        public string[] PrintNumbers(int num){
-            throw new NotImplementedException("Please write your solution here");
+        public string[] PrintNumbers(int num)
+        {
+            string[] FizzBuzz = new string[num];
+
+            for (int i = 1; i <= num; i++)
+            {
+                FizzBuzz[i - 1] = Print(i);
+            }
+                return FizzBuzz;
+            
         }
     }
 }
