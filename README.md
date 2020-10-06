@@ -11,6 +11,7 @@
 - ReactJs
 - .NET ,.NET CORE, ASP.NET MVC
 - C#
+- ADO.NET
 - Redux
 - SQL
 - Azure Cloud
