@@ -9,20 +9,7 @@ namespace Brainchild.Curriculum
         public void SetUp()
         {
         }
-        [Test]
-        public void CheckingNormalHourReturningValue()
-        {
-            NormalStrategy normalstrategy = new NormalStrategy();
-            double actual = normalstrategy.Print(100);
-            Assert.AreEqual(actual, 100);
-        }
-        [Test]
-        public void CheckingHappyHourReturningValue()
-        {
-            HappyHourStrategy happyhourstrategy = new HappyHourStrategy();
-            double actual = happyhourstrategy.Print(100);
-            Assert.AreEqual(actual, 80);
-        }
+       
         [Test]
         public void CheckingNormalHourBilling()
         {
