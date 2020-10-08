@@ -13,7 +13,7 @@ namespace Brainchild.Curriculum.Solutions
         }
         public static int AreaCube(int length)
         {
-            int result = length * length;
+            int result = 6*length * length;
             return result;
         }
         public static double AreaCylinder(int radius, int height)

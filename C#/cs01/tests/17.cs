@@ -19,7 +19,7 @@ namespace Brainchild.Curriculum
         public void TestCubeArea()
         {
             int result = GoemetryCalculator.AreaCube(12);
-            Assert.AreEqual(result, 144);
+            Assert.AreEqual(result, 864);
         }
         [Test]
         public void TestCylinderArea()
