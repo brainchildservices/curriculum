@@ -3,16 +3,15 @@ using System.Globalization;
 namespace Brainchild.Curriculum.Solutions
 {
     public static class Pascal
+    {
+        public static string ToPascalCase(this string any)
         {
-            public static string ToPascalCase(this string any)
-            {
-                TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
-                return myTI.ToTitleCase(any);
-            }
+            TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
+            return myTI.ToTitleCase(any);
         }
+    }
     public static class GoemetricCalculatorArea
     {
-
         public static double Circle(double radius)
         {
             return Math.Round((3.14 * radius * radius), 2);
