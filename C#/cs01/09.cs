@@ -1,11 +1,18 @@
 using System;
 namespace Brainchild.Curriculum.Solutions
 {
-    public class Solution09
+    public static class PascalConverter
     {
-        public bool ToDo(int a, float b,string c)
+        public static string ToPascalCase(this string str)
         {
-            throw new NotImplementedException("Please write your solution here");
+           char[] temp=new char[str.Length];
+           temp[0]=Char.ToUpper(str[0]);
+           for (int i = 1; i < str.Length; i++)
+           {
+               temp[i]=Char.ToLower(str[i]);
+           }
+           string caseResult=new string(temp);
+           return caseResult;
         }
     }
 }
