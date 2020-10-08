@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Brainchild.Curriculum.Solutions;
 namespace Brainchild.Curriculum
 {
     [TestFixture]
@@ -9,9 +10,28 @@ namespace Brainchild.Curriculum
         {
         }
         [Test]
-        public void Test01()
+        public void TestCircle()
         {
-            Assert.Fail();
+            double result=GeometryCalculator.CircleArea(10);
+            Assert.AreEqual(result,314);
+        }
+        [Test]
+        public void TestCube()
+        {
+            int result=GeometryCalculator.CubeArea(5);
+            Assert.AreEqual(result,150);
+        }
+        [Test]
+        public void TestCylinder()
+        {
+            double result=GeometryCalculator.CylinderArea(6,5);
+            Assert.AreEqual(result,414.48001098632812);
+        }
+        [Test]
+        public void TestTriangle()
+        {
+            double result=GeometryCalculator.TriangleArea(6,13);
+            Assert.AreEqual(result,39);
         }
       }
 }
