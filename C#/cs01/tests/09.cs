@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Brainchild.Curriculum.Solutions;
 namespace Brainchild.Curriculum
 {
     [TestFixture]
@@ -9,9 +10,18 @@ namespace Brainchild.Curriculum
         {
         }
         [Test]
-        public void Test01()
+        public void TestPascalCase()
         {
-            Assert.Fail();
+            string myName="syaMiL";
+            string result=myName.ToPascalCase();
+            Assert.AreEqual(result,"Syamil");
+        }
+        [Test]
+        public void TestPascalSecond()
+        {
+            string myName="paSCalCamel";
+            string result=myName.ToPascalCase();
+            Assert.AreEqual(result,"Pascalcamel");
         }
       }
 }
