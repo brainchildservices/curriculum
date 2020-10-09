@@ -2,12 +2,29 @@ using System;
 using System.Globalization;
 namespace Brainchild.Curriculum.Solutions
 {
-    public static class Pascal
+     public static class Pascal
     {
         public static string ToPascalCase(this string any)
         {
-            TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
-            return myTI.ToTitleCase(any);
+            String[] split = { " ", "," };
+            String[] strarr = any.Split(split, StringSplitOptions.RemoveEmptyEntries);
+            string pascalstr = "";
+			int len=strarr.Length;
+			foreach (string str in strarr)
+            {
+				char[] x=new char[str.Length];
+                 x[0]=char.ToUpper(str[0]);
+                for (int i = 1; i < str.Length; i++)
+                {
+                    x[i]=char.ToLower(str[i]);
+                }
+				if(str!=strarr[len-1]){
+				pascalstr+=new string(x)+" ";
+				}else{pascalstr+=new string(x);
+				}
+				
+            }
+            return pascalstr;
         }
     }
     public static class GoemetricCalculatorArea
