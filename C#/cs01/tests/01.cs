@@ -28,7 +28,7 @@ namespace Brainchild.Curriculum
             string result = "Fizz";
             Assert.AreEqual(expected, result);
         }
-                [Test]
+        [Test]
         //write all test cases which covers FizzBuzzPrinter Print and PrintNumbers logics
         public void FizzBuzzTest2()
         {
@@ -37,22 +37,22 @@ namespace Brainchild.Curriculum
             string result = "FizzBuzz";
             Assert.AreEqual(expected, result);
         }
-                        [Test]
+        [Test]
         //write all test cases which covers FizzBuzzPrinter Print and PrintNumbers logics
         public void FizzBuzzTest3()
         {
             FizzBuzzPrinter fizz = new FizzBuzzPrinter();
-            string [] expected = fizz.PrintNumbers(5);
-            string [] result = {"1","2","Fizz","4","Buzz"};
+            string[] expected = fizz.PrintNumbers(5);
+            string[] result = { "1", "2", "Fizz", "4", "Buzz" };
             Assert.AreEqual(expected, result);
         }
-                                [Test]
+        [Test]
         //write all test cases which covers FizzBuzzPrinter Print and PrintNumbers logics
         public void FizzBuzzTest4()
         {
             FizzBuzzPrinter fizz = new FizzBuzzPrinter();
-            string [] expected = fizz.PrintNumbers(15);
-            string [] result = {"1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"};
+            string[] expected = fizz.PrintNumbers(15);
+            string[] result = { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz" };
             Assert.AreEqual(expected, result);
         }
     }

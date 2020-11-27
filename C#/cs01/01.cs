@@ -34,10 +34,10 @@ namespace Brainchild.Curriculum.Solutions
         ///Accept one number and return an array of strings(Fizz or Buzz or the number ) for each value 0 to num passed to the below function
         public string[] PrintNumbers(int num)
         {
-            string [] result = new string [num];
-            for(int i=0; i<num; i++)
+            string[] result = new string[num];
+            for (int i = 0; i < num; i++)
             {
-                result [i]= Print (i+1);
+                result[i] = Print(i + 1);
             }
             return result;
         }
