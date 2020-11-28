@@ -9,6 +9,60 @@ namespace Brainchild.Curriculum.Solutions
     */
     public class Calculator
     {
+        public int Add(int x, int y)
+        {
+            return x + y;
+        }
+        public double Add(double x, double y)
+        {
+            return x + y;
+        }
+        public string Add(string x, string y)
+        {
+            return x + y;
+        }
+        public float Add(float x, float y)
+        {
+            return x + y;
+        }
+        public long Add(long x, long y)
+        {
+            return x + y;
+        }
+
         // please note that you can use concept method overloading to accept integers/floats etc   
+        public int Sub(int x, int y)
+        {
+            return x - y;
+        }
+        public double Sub(double x, double y)
+        {
+            return x - y;
+        }
+        public float Sub(float x, float y)
+        {
+            return x - y;
+        }
+        public long Sub(long x, long y)
+        {
+            return x - y;
+        }
+
+        public int Mul(int x, int y)
+        {
+            return x * y;
+        }
+        public double Mul(double x, double y)
+        {
+            return x * y;
+        }
+        public float Mul(float x, float y)
+        {
+            return x * y;
+        }
+        public long Mul(long x, long y)
+        {
+            return x * y;
+        }
     }
 }
