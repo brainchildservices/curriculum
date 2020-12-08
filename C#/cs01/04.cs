@@ -9,7 +9,6 @@ namespace Brainchild.Curriculum.Solutions
     Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, 
     Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
     */
-FizzBuzz-V2
     public class FizzBuzzV2:FizzBuzzPrinter
 
     {
