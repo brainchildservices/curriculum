@@ -14,7 +14,7 @@ namespace Brainchild.Curriculum
         {
             Conversion str = new Conversion();
             string result = str.convertopposite("Vishnu Unnikrishnan");
-            string expected = "vISHNU uNNIKRISNAN";
+            string expected = "vISHNU uNNIKRISHNAN";
             Assert.AreEqual(expected, result);
         }
     }
