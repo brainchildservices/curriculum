@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Brainchild.Curriculum.Solutions;
 namespace Brainchild.Curriculum
 {
     [TestFixture]
@@ -11,7 +12,10 @@ namespace Brainchild.Curriculum
         [Test]
         public void Test01()
         {
-            Assert.Fail();
+            Conversion str = new Conversion();
+            string result = str.convertopposite("Vishnu Unnikrishnan");
+            string expected = "vISHNU uNNIKRISNAN";
+            Assert.AreEqual(expected, result);
         }
-      }
+    }
 }

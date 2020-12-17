@@ -1,13 +1,18 @@
 using System;
 namespace Brainchild.Curriculum.Solutions
 {
+    public interface IBubbleSort
+    {
+        public int[] Sort(int[] arr);
+
+    }
     //implement bubblesort in C# and also create the necessary tests
-    public class BubbleSort
+    public class BubbleSort : IBubbleSort
     {
         public int[] Sort(int[] arr)
         {
 
-            int n =arr.Length;
+            int n = arr.Length;
             int temp;
             for (int i = 0; i < n; i++)
             {

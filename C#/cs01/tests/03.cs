@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using Brainchild.Curriculum.Solutions;
+using Moq;
 namespace Brainchild.Curriculum
 
 {
@@ -31,7 +32,7 @@ namespace Brainchild.Curriculum
             result = bsort.Sort(check);
             Assert.AreEqual(result, expected);
         }
-                [Test]
+        [Test]
         public void Tests03()
         {
             BubbleSort bsort = new BubbleSort();
@@ -41,5 +42,19 @@ namespace Brainchild.Curriculum
             result = bsort.Sort(check);
             Assert.AreEqual(result, expected);
         }
+        [Test]
+        public void Test04()
+        {
+            var bubblesortMock = new Mock<IBubbleSort>();
+            int[] expected = new int[] { 1, 3, 6, 8, 10 };
+            int[] check = new int[] { 10, 8, 3, 6, 1 };
+            bubblesortMock.Setup(b => b.Sort(check)).Returns(expected);
+
+            int[] result = new int[5];
+
+            result = bubblesortMock.Object.Sort(check);
+            Assert.AreEqual(result, expected);
+        }
+
     }
 }
