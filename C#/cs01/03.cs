@@ -19,7 +19,7 @@ namespace Brainchild.Curriculum.Solutions
 				    }
 			    }
 		    }
-        return arr;
+            return arr;
         }     
     }
 }
